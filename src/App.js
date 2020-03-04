@@ -1,12 +1,13 @@
 import React from 'react';
-import './App.css';
+import Layout from './components/Layout/Layout';
+import CodesEditor from './containers/CodesEditor/CodesEditor';
 
 function App() {
-  return (
-    <div className="App">
-
-    </div>
-  );
+    return (
+        <Layout>
+            <CodesEditor />
+        </Layout>
+    );
 }
 
 export default App;
