@@ -3,7 +3,7 @@ import React from 'react';
 const EditIcons = (props) => (
     <div>
         <div>Edit</div>
-        <div>Remove</div>
+        <button onClick = {props.removeItem}>Remove</button>
     </div>
 );
 

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Code from '../../components/Code/Code';
+import Codes from '../../components/Codes/Codes';
 import Modal from '../../components/UI/Modal/Modal';
 
 const CodesEditor = (props) => {
@@ -9,7 +9,7 @@ const CodesEditor = (props) => {
             {code:'code2',description:'description2'},
             {code:'code3',description:'description3'},
             {code:'code4',description:'description4'},
-            {code:'code5',description:'description5'},
+            {code:'code5',description:'description5'}
         ],
         totalPrice: 4,
         purchasable: false,
@@ -23,12 +23,19 @@ const CodesEditor = (props) => {
         setCodesState(updatedState);
     };
 
+    const removeCodeHandler = (index) => {
+        const updatedState = {...state};
+
+        updatedState.codes.splice(index, 1);
+        setCodesState(updatedState);
+    };
+
     //let codes = state.codes
 
     return (
         <React.Fragment>
             <Modal visability={state.editPressed} editCloseHandler={editCloseHandler} />
-            <Code ingridients={state.ingridients} />
+            <Codes codes={state.codes} removeCodeHandler={removeCodeHandler} />
         </React.Fragment>
     );
 };
