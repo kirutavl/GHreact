@@ -6,7 +6,7 @@ const Code = (props) => (
     <div className={classes.Code}>
         <div>{props.code}</div>
         <div>{props.description}</div>
-        <EditIcons removeItem={props.removed}/>
+        <EditIcons editItem={props.edit} removeItem={props.removed}/>
     </div>
 );
 
