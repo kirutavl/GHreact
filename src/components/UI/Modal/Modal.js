@@ -6,7 +6,10 @@ import classes from './Modal.module.css';
 const Modal = (props) => {
 
     const ModalContent = (
-        <div className={classes.Modal}>{props.children}</div>);
+        <div>
+            <div className={classes.Modal}>{props.children}</div>
+            <div className={classes.Overlay}></div>
+        </div>);
 
 
     return props.visability ? ModalContent : null;
