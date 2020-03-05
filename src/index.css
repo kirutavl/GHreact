@@ -15747,3 +15747,8 @@ body {
 
 .inside {
   max-width: 103rem; }
+
+.redText {
+  color: red;
+}
+

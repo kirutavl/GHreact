@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import Code from '../../components/Code/Code';
+import Codes from '../../components/Codes/Codes';
+import Editor from '../../components/Editor/Editor';
 import Modal from '../../components/UI/Modal/Modal';
 
 const CodesEditor = (props) => {
@@ -9,17 +10,45 @@ const CodesEditor = (props) => {
             {code:'code2',description:'description2'},
             {code:'code3',description:'description3'},
             {code:'code4',description:'description4'},
-            {code:'code5',description:'description5'},
+            {code:'code5',description:'description5'}
         ],
-        totalPrice: 4,
-        purchasable: false,
+        editingIndex: 1,
         editPressed: false
     });
 
-    const editCloseHandler = () => {
+    const editPressedHandler = (index) => {
+        const updatedState = {...state};
+
+        updatedState.editPressed = true;
+        updatedState.editingIndex = index;
+        setCodesState(updatedState);
+    };
+
+    const removeCodeHandler = (index) => {
+        const updatedState = {...state};
+
+        updatedState.codes.splice(index, 1);
+        setCodesState(updatedState);
+    };
+
+    const onSaveHandler = (index) => {
         const updatedState = {...state};
 
         updatedState.editPressed = false;
+        setCodesState(updatedState);
+    };
+
+    const codeChangeHandler = (event) => {
+        const updatedState = {...state};
+
+        updatedState.codes[state.editingIndex].code = event.target.value;
+        setCodesState(updatedState);
+    };
+
+    const descriptionChangeHandler = (event) => {
+        const updatedState = {...state};
+
+        updatedState.codes[state.editingIndex].description = event.target.value;
         setCodesState(updatedState);
     };
 
@@ -27,8 +56,15 @@ const CodesEditor = (props) => {
 
     return (
         <React.Fragment>
-            <Modal visability={state.editPressed} editCloseHandler={editCloseHandler} />
-            <Code ingridients={state.ingridients} />
+            <Modal visability={state.editPressed}>
+                <Editor 
+                    save={onSaveHandler} 
+                    code={state.codes[state.editingIndex].code} 
+                    description={state.codes[state.editingIndex].description}
+                    codeChanged={(event) => codeChangeHandler(event)}
+                    descriptionChanged={(event) => descriptionChangeHandler(event)} />
+            </Modal>
+            <Codes codes={state.codes} editCodeHandler={editPressedHandler} removeCodeHandler={removeCodeHandler} />
         </React.Fragment>
     );
 };
