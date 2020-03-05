@@ -9,7 +9,7 @@ const Codes = (props) => {
         return <Code
                 code={item.code} 
                 description={item.description}
-                key={index}
+                key={'code'+index}
                 edit={() => props.editCodeHandler(index)}
                 removed={() => props.removeCodeHandler(index)}
             />
