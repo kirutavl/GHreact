@@ -12,6 +12,30 @@ code {
     monospace;
 }
 
+@font-face {
+  font-family: "Source Sans Pro Light";
+  src: url("assets/fonts/sourcesanspro/sourcesanspro-light.woff?v=882291") format("woff"), url("assets/fonts/sourcesanspro/sourcesanspro-light.ttf?v=882291") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Source Sans Pro Regular";
+  src: url("assets/fonts/sourcesanspro/sourcesanspro-regular.woff?v=882291") format("woff"), url("assets/fonts/sourcesanspro/sourcesanspro-regular.ttf?v=882291") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Source Sans Pro Semibold";
+  src: url("assets/fonts/sourcesanspro/sourcesanspro-semibold.woff?v=882291") format("woff"), url("assets/fonts/sourcesanspro/sourcesanspro-semibold.ttf?v=882291") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Font Icon";
+  src: url("assets/fonts/icons/i.woff?v=882292") format("woff"), url("assets/fonts/icons/i.ttf?v=882292") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -7753,308 +7777,286 @@ dd {
 .i-xl {
   font-size: 4.8rem; }
 
-.i-person-edit:before {
-  content: "\e900"; }
-
-.i-phone-circle:before {
-  content: "\e901"; }
-
-.i-pie-chart:before {
-  content: "\e902"; }
-
-.i-play:before {
-  content: "\e903"; }
-
-.i-plus:before {
-  content: "\e904"; }
-
-.i-point:before {
-  content: "\e905"; }
-
-.i-print:before {
-  content: "\e906"; }
-
-.i-question-mark:before {
-  content: "\e907"; }
-
-.i-receipt:before {
-  content: "\e908"; }
-
-.i-refresh:before {
-  content: "\e909"; }
-
-.i-reporting:before {
-  content: "\e90a"; }
-
-.i-search-magnifier:before, .k-list-filter .k-i-search:before, .search-email-wrap .k-select .k-i-arrow-s:before {
-  content: "\e90b"; }
-
-.i-search-magnifier-bold:before {
-  content: "\e90c"; }
-
-.i-setting:before, .i-settings:before {
-  content: "\e90d"; }
-
-.i-share:before {
-  content: "\e90e"; }
-
-.i-shield-checkmark:before {
-  content: "\e90f"; }
-
-.i-shield-star:before {
-  content: "\e910"; }
-
-.i-stethoscope:before, .i-healthcare:before {
-  content: "\e911"; }
-
-.i-stop-circle:before {
-  content: "\e912"; }
-
-.i-sun:before {
-  content: "\e913"; }
-
-.i-thumbs-up:before {
-  content: "\e914"; }
-
-.i-trash:before {
-  content: "\e915"; }
-
-.i-un-archive:before {
-  content: "\e916"; }
-
-.i-un-archive-2:before {
-  content: "\e917"; }
-
-.i-user:before {
-  content: "\e918"; }
-
-.i-wallet:before {
-  content: "\e919"; }
-
-.i-wifi:before {
-  content: "\e91a"; }
-
-.i-work-bag:before {
-  content: "\e91b"; }
-
-.i-add-search:before {
-  content: "\e91c"; }
-
-.i-alert-triangle:before {
-  content: "\e91d"; }
-
-.i-archive:before {
-  content: "\e91e"; }
-
-.i-arrow-circle:before {
-  content: "\e91f"; }
-
-.i-arrow-horiz:before {
-  content: "\e920"; }
-
-.i-arrow-vert:before, .k-select .k-i-arrow-s:before {
-  content: "\e921"; }
-
-.i-bar-chart:before {
-  content: "\e922"; }
-
-.i-bell:before {
-  content: "\e923"; }
-
-.i-bill:before, .i-billing:before {
-  content: "\e924"; }
-
-.i-book:before, .i-resource_center:before {
-  content: "\e925"; }
-
-.i-box:before {
-  content: "\e926"; }
-
-.i-bubble:before {
-  content: "\e927"; }
-
-.i-bubble-double:before {
-  content: "\e928"; }
-
-.i-building:before {
-  content: "\e929"; }
-
-.i-bulb:before {
-  content: "\e92a"; }
-
-.i-calendar:before {
-  content: "\e92b"; }
-
-.i-card:before, .i-creditCheck:before {
-  content: "\e92c"; }
-
-.i-car-truck:before, .i-motorVehicle:before {
-  content: "\e92d"; }
-
-.i-certificate:before, .i-verification:before {
-  content: "\e92e"; }
-
-.i-chain-link:before {
-  content: "\e92f"; }
-
-.i-checkmark:before, .k-chip .k-i-check:before {
-  content: "\e930"; }
-
-.i-clipboard:before {
-  content: "\e931"; }
-
-.i-clock:before {
-  content: "\e932"; }
-
-.i-close:before, .k-widget .k-i-close:before {
-  content: "\e933"; }
-
-.i-court:before {
-  content: "\e934"; }
-
-.i-court-weights:before, .i-criminal:before {
-  content: "\e935"; }
-
-.i-dashboard:before {
-  content: "\e936"; }
-
-.i-document:before {
-  content: "\e937"; }
-
-.i-document-check:before {
-  content: "\e938"; }
-
-.i-document-checklist:before, .i-background_checks:before {
-  content: "\e939"; }
-
-.i-document-edit:before {
-  content: "\e93a"; }
-
-.i-document-filled:before {
-  content: "\e93b"; }
-
-.i-document-search:before {
-  content: "\e93c"; }
-
-.i-dots:before {
-  content: "\e93d"; }
-
-.i-dots-circle:before {
-  content: "\e93e"; }
-
-.i-download:before {
-  content: "\e93f"; }
-
-.i-download-bold:before {
-  content: "\e940"; }
-
-.i-drug-bottle:before, .i-drug:before {
-  content: "\e941"; }
-
-.i-edit:before {
-  content: "\e942"; }
-
-.i-envelope:before, .k-chip .k-i-envelope:before {
-  content: "\e943"; }
-
-.i-envelope-open:before, .i-contact_us:before {
-  content: "\e944"; }
-
-.i-envelope-refresh:before {
-  content: "\e945"; }
-
-.i-exclamation-mark:before {
-  content: "\e946"; }
-
-.i-eye:before {
-  content: "\e947"; }
-
-.i-eye-closed:before {
-  content: "\e948"; }
-
-.i-eye-half:before {
-  content: "\e949"; }
-
-.i-FAQ:before, .i-faq:before {
-  content: "\e94a"; }
-
-.i-finger-print:before, .i-identity:before {
-  content: "\e94b"; }
-
-.i-gavel:before, .i-civil:before {
-  content: "\e94c"; }
-
-.i-g-circle:before {
-  content: "\e94d"; }
-
-.i-gear:before, .i-account:before {
-  content: "\e94e"; }
-
-.i-globe-world:before, .i-international:before {
-  content: "\e94f"; }
-
-.i-graduation-hat:before {
-  content: "\e950"; }
-
-.i-handcuffs:before {
-  content: "\e951"; }
-
-.i-history:before {
-  content: "\e952"; }
-
-.i-info:before {
-  content: "\e953"; }
-
-.i-list:before {
-  content: "\e954"; }
-
-.i-location:before {
-  content: "\e955"; }
-
-.i-lock:before {
-  content: "\e956"; }
-
-.i-lock-small:before {
-  content: "\e957"; }
-
-.i-money-down:before {
-  content: "\e958"; }
-
-.i-ongoing-circle:before, .i-ongoingAlert:before {
-  content: "\e959"; }
-
-.i-open-envelope-check:before {
-  content: "\e95a"; }
-
-.i-people:before {
-  content: "\e95b"; }
-
-.i-person:before {
-  content: "\e95c"; }
-
-@font-face {
-  font-family: "Source Sans Pro Light";
-  src: url("/contentoutput/ng/assets/fonts/sourcesanspro/sourcesanspro-light.woff?v=882291") format("woff"), url("/contentoutput/ng/assets/fonts/sourcesanspro/sourcesanspro-light.ttf?v=882291") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: "Source Sans Pro Regular";
-  src: url("/contentoutput/ng/assets/fonts/sourcesanspro/sourcesanspro-regular.woff?v=882291") format("woff"), url("/contentoutput/ng/assets/fonts/sourcesanspro/sourcesanspro-regular.ttf?v=882291") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: "Source Sans Pro Semibold";
-  src: url("/contentoutput/ng/assets/fonts/sourcesanspro/sourcesanspro-semibold.woff?v=882291") format("woff"), url("/contentoutput/ng/assets/fonts/sourcesanspro/sourcesanspro-semibold.ttf?v=882291") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: "Font Icon";
-  src: url("/contentoutput/ng/assets/fonts/icons/i.woff?v=882291") format("woff"), url("/contentoutput/ng/assets/fonts/icons/i.ttf?v=882291") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
+  .i-search-magnifier-bold:before {
+    content: "\e900";
+  }
+  .i-setting:before {
+    content: "\e901";
+  }
+  .i-share:before {
+    content: "\e902";
+  }
+  .i-shield-checkmark:before {
+    content: "\e903";
+  }
+  .i-shield-star:before {
+    content: "\e904";
+  }
+  .i-stethoscope:before {
+    content: "\e905";
+  }
+  .i-stop-circle:before {
+    content: "\e906";
+  }
+  .i-sun:before {
+    content: "\e907";
+  }
+  .i-thumbs-up:before {
+    content: "\e908";
+  }
+  .i-trash:before {
+    content: "\e909";
+  }
+  .i-un-archive:before {
+    content: "\e90a";
+  }
+  .i-un-archive-2:before {
+    content: "\e90b";
+  }
+  .i-user:before {
+    content: "\e90c";
+  }
+  .i-wallet:before {
+    content: "\e90d";
+  }
+  .i-wifi:before {
+    content: "\e90e";
+  }
+  .i-work-bag:before {
+    content: "\e90f";
+  }
+  .i-add-search:before {
+    content: "\e910";
+  }
+  .i-alert-triangle:before {
+    content: "\e911";
+  }
+  .i-archive:before {
+    content: "\e912";
+  }
+  .i-arrow-circle:before {
+    content: "\e913";
+  }
+  .i-arrow-horiz:before {
+    content: "\e914";
+  }
+  .i-arrow-vert:before {
+    content: "\e915";
+  }
+  .i-bar-chart:before {
+    content: "\e916";
+  }
+  .i-bell:before {
+    content: "\e917";
+  }
+  .i-bill:before {
+    content: "\e918";
+  }
+  .i-book:before {
+    content: "\e919";
+  }
+  .i-box:before {
+    content: "\e91a";
+  }
+  .i-bubble:before {
+    content: "\e91b";
+  }
+  .i-bubble-double:before {
+    content: "\e91c";
+  }
+  .i-building:before {
+    content: "\e91d";
+  }
+  .i-bulb:before {
+    content: "\e91e";
+  }
+  .i-calendar:before {
+    content: "\e91f";
+  }
+  .i-card:before {
+    content: "\e920";
+  }
+  .i-car-truck:before {
+    content: "\e921";
+  }
+  .i-certificate:before {
+    content: "\e922";
+  }
+  .i-chain-link:before {
+    content: "\e923";
+  }
+  .i-checkmark:before {
+    content: "\e924";
+  }
+  .i-clipboard:before {
+    content: "\e925";
+  }
+  .i-clock:before {
+    content: "\e926";
+  }
+  .i-close:before {
+    content: "\e927";
+  }
+  .i-court:before {
+    content: "\e928";
+  }
+  .i-court-weights:before {
+    content: "\e929";
+  }
+  .i-dashboard:before {
+    content: "\e92a";
+  }
+  .i-document:before {
+    content: "\e92b";
+  }
+  .i-document-check:before {
+    content: "\e92c";
+  }
+  .i-document-checklist:before {
+    content: "\e92d";
+  }
+  .i-document-edit:before {
+    content: "\e92e";
+  }
+  .i-document-filled:before {
+    content: "\e92f";
+  }
+  .i-document-search:before {
+    content: "\e930";
+  }
+  .i-dots:before {
+    content: "\e931";
+  }
+  .i-dots-circle:before {
+    content: "\e932";
+  }
+  .i-download:before {
+    content: "\e933";
+  }
+  .i-download-bold:before {
+    content: "\e934";
+  }
+  .i-drug-bottle:before {
+    content: "\e935";
+  }
+  .i-edit:before {
+    content: "\e936";
+  }
+  .i-envelope:before {
+    content: "\e937";
+  }
+  .i-envelope-open:before {
+    content: "\e938";
+  }
+  .i-envelope-refresh:before {
+    content: "\e939";
+  }
+  .i-exclamation-mark:before {
+    content: "\e93a";
+  }
+  .i-eye:before {
+    content: "\e93b";
+  }
+  .i-eye-closed:before {
+    content: "\e93c";
+  }
+  .i-eye-half:before {
+    content: "\e93d";
+  }
+  .i-FAQ:before {
+    content: "\e93e";
+  }
+  .i-finger-print:before {
+    content: "\e93f";
+  }
+  .i-gavel:before {
+    content: "\e940";
+  }
+  .i-g-circle:before {
+    content: "\e941";
+  }
+  .i-gear:before {
+    content: "\e942";
+  }
+  .i-globe-world:before {
+    content: "\e943";
+  }
+  .i-graduation-hat:before {
+    content: "\e944";
+  }
+  .i-handcuffs:before {
+    content: "\e945";
+  }
+  .i-history:before {
+    content: "\e946";
+  }
+  .i-info:before {
+    content: "\e947";
+  }
+  .i-list:before {
+    content: "\e948";
+  }
+  .i-location:before {
+    content: "\e949";
+  }
+  .i-lock:before {
+    content: "\e94a";
+  }
+  .i-lock-small:before {
+    content: "\e94b";
+  }
+  .i-money-down:before {
+    content: "\e94c";
+  }
+  .i-ongoing-circle:before {
+    content: "\e94d";
+  }
+  .i-open-envelope-check:before {
+    content: "\e94e";
+  }
+  .i-people:before {
+    content: "\e94f";
+  }
+  .i-person:before {
+    content: "\e950";
+  }
+  .i-person-edit:before {
+    content: "\e951";
+  }
+  .i-phone-circle:before {
+    content: "\e952";
+  }
+  .i-pie-chart:before {
+    content: "\e953";
+  }
+  .i-play:before {
+    content: "\e954";
+  }
+  .i-plus:before {
+    content: "\e955";
+  }
+  .i-point:before {
+    content: "\e956";
+  }
+  .i-print:before {
+    content: "\e957";
+  }
+  .i-question-mark:before {
+    content: "\e958";
+  }
+  .i-receipt:before {
+    content: "\e959";
+  }
+  .i-refresh:before {
+    content: "\e95a";
+  }
+  .i-reporting:before {
+    content: "\e95b";
+  }
+  .i-search-magnifier:before {
+    content: "\e95c";
+  }
+  
 
 .svg {
   max-height: 100%;
