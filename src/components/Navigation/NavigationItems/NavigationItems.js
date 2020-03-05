@@ -7,7 +7,7 @@ const NavigationItems = (props) => {
     ));
 
     return (
-        <ul className={classes.NavigationItems}>
+        <ul class="sub-nav" className={classes.NavigationItems}>
             {items}
         </ul>
     );
